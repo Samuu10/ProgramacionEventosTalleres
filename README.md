@@ -1,10 +1,14 @@
 ## APLICACIÓN ANDROID - TALLER 1
 
+
+
 - INTRODUCCIÓN
 
 Esta aplicación de Android permite al usuario cambiar el color de fondo de las diferentes pantallas a través de una pantalla de configuración.
 El cambio de color se refleja de manera persistente en todas las pantallas de la aplicación,incluso cuando el usuario navega entre ellas.
 El proyecto está desarrollado en Kotlin usando Android Studio.
+
+
 
 - OBJETIVOS
 
@@ -13,23 +17,25 @@ Diseñar y desarrollar interfaces de usuario interactivas.
 Implementar el manejo de eventos en aplicaciones Android.
 Realizar pruebas y depuración de aplicaciones Android.
 
+
+
 - PARTES A REALIZAR
 
   1. Pantalla de Inicio:
 Un saludo personalizado que cambia según la hora del día (Buenos días, Buenas tardes, Buenas noches).
 Un botón que lleve a la pantalla de la actividad principal.
 
-  2. Actividad Principal:
-
+  2. Actividad Principal: 
 Un campo de texto para ingresar el nombre del usuario.
 Un botón para guardar el nombre ingresado.
 Un TextView que muestre el nombre ingresado.
 Un botón para navegar a una tercera pantalla.
 
   3. Pantalla de Configuración:
-
 Opciones para cambiar el color del fondo de la aplicación.
 Un botón para volver a la pantalla de inicio.
+
+
 
 - REALIZACIÓN DEL EJERCICIO
 
@@ -47,7 +53,7 @@ pantalla_configuracion.xml
 Define la interfaz de la pantalla de configuración.
 Contiene un botón que cambia el color de fondo de la aplicación y otro botón que permite regresar a la pantalla de inicio.
 
-  2.Clases Kotlin
+  2. Clases Kotlin
   
 PantallaInicio.kt
 Esta clase maneja la lógica de la pantalla de inicio.
@@ -61,10 +67,14 @@ PantallaConfiguracion.kt
 Maneja la pantalla de configuración. Aquí es donde el usuario puede cambiar el color de fondo. 
 Este cambio se guarda de manera persistente y se refleja en todas las pantallas de la aplicación.
 
+
+
 - INSTALACIÓN
+
 Clona este repositorio en tu máquina local.
 Abre el proyecto en Android Studio.
 Ejecuta la aplicación en un emulador o dispositivo físico.
 
 
-Link al repositorio:
+
+Link al repositorio: https://github.com/Samuu10/ProgramacionConcurrenteTaller1.git
