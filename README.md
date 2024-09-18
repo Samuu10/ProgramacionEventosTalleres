@@ -39,7 +39,7 @@ Un botón para volver a la pantalla de inicio.
 
 - REALIZACIÓN DEL EJERCICIO
 
-  1. Archivos XML
+Archivos XML:
      
 pantalla_inicio.xml
 Este archivo define el diseño de la pantalla de inicio de la aplicación.
@@ -53,7 +53,7 @@ pantalla_configuracion.xml
 Define la interfaz de la pantalla de configuración.
 Contiene un botón que cambia el color de fondo de la aplicación y otro botón que permite regresar a la pantalla de inicio.
 
-  2. Clases Kotlin
+Clases Kotlin:
   
 PantallaInicio.kt
 Esta clase maneja la lógica de la pantalla de inicio.
