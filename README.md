@@ -78,3 +78,6 @@ Ejecuta la aplicación en un emulador o dispositivo físico.
 
 
 Link al repositorio: https://github.com/Samuu10/ProgramacionConcurrenteTaller1.git
+
+
+PD: Me he equivocado en el título, he puesto Programación Concurrente en vez de Programación Dirigida Por Eventos :(
