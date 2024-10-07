@@ -20,7 +20,10 @@
         android:text="Guardar Nombre"
         android:layout_below="@id/editTextName"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="30dp"
+        android:padding="16dp"
+        android:background="@color/black"
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/textViewDisplayName"
@@ -28,7 +31,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/buttonSaveName"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/buttonGoToSettings"
@@ -37,5 +42,31 @@
         android:text="Ir a Configuración"
         android:layout_below="@id/textViewDisplayName"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp"
+        android:padding="16dp"
+        android:background="@color/black"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/buttonStartTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Tarea"
+        android:layout_below="@id/buttonGoToSettings"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:padding="16dp"
+        android:background="@color/black"
+        android:textColor="@color/white"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonStartTask"
+        android:layout_marginTop="200dp"
+        android:max="100"
+        android:visibility="gone" />
+
 </RelativeLayout>

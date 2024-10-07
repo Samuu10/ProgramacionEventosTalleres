@@ -11,7 +11,10 @@
         android:layout_height="wrap_content"
         android:text="Cambiar Color de Fondo"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="100dp"
+        android:padding="16dp"
+        android:background="@color/black"
+        android:textColor="@color/white"/>
 
     <Button
         android:id="@+id/buttonBackToStart"
@@ -20,5 +23,9 @@
         android:text="Volver a Inicio"
         android:layout_below="@id/buttonChangeBackgroundColor"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="480dp"/>
+        android:layout_marginTop="480dp"
+        android:padding="16dp"
+        android:background="@color/black"
+        android:textColor="@color/white"/>
+
 </RelativeLayout>

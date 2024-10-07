@@ -10,6 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="24sp"
+        android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="250dp"/>
 
@@ -20,5 +21,8 @@
         android:text="Ir a Actividad Principal"
         android:layout_below="@id/textViewGreeting"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"/>
+        android:layout_marginTop="50dp"
+        android:padding="16dp"
+        android:background="@color/black"
+        android:textColor="@color/white"/>
 </RelativeLayout>
