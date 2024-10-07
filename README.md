@@ -1,6 +1,6 @@
-## APLICACIÓN ANDROID - TALLER 1
+## APLICACIÓN ANDROID - TALLER 1 + TALLER 2
 
-
+# TALLER 1
 
 - INTRODUCCIÓN
 
@@ -67,7 +67,11 @@ PantallaConfiguracion.kt
 Maneja la pantalla de configuración. Aquí es donde el usuario puede cambiar el color de fondo. 
 Este cambio se guarda de manera persistente y se refleja en todas las pantallas de la aplicación.
 
+# TALLER 2
 
+Se ha ampliado el código para integrar la gestión de tareas en segundo plano usando AsyncTask, que permite realizar tareas en el background.
+Se ha cambiado la forma de obtener la hora actual, que ahora se obtiene en un método que se ejecuta en segundo plano.
+Se ha añadido una barra de progreso para simular otras posibles tareas realizadas en el background.
 
 - INSTALACIÓN
 
