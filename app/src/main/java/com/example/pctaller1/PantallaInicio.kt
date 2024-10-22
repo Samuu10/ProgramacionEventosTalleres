@@ -10,12 +10,14 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import java.util.*
 
+//Actividad que muestra la pantalla de inicio
 class PantallaInicio : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.pantalla_inicio)
 
+        //Definimos las vistas
         val textViewGreeting = findViewById<TextView>(R.id.textViewGreeting)
         val buttonGoToMain = findViewById<Button>(R.id.buttonGoToMain)
 
@@ -33,6 +35,7 @@ class PantallaInicio : AppCompatActivity() {
         //Iniciamos AsyncTask para obtener el saludo
         ObtenerSaludoTask(textViewGreeting, userName).execute()
 
+        //Botón para ir a la pantalla principal
         buttonGoToMain.setOnClickListener {
             startActivity(Intent(this, ActividadPrincipal::class.java))
         }
@@ -42,13 +45,14 @@ class PantallaInicio : AppCompatActivity() {
     private class ObtenerSaludoTask(private val textView: TextView, private val userName: String?) : AsyncTask<Void, Void, String>() {
         //Método que se ejecuta en segundo plano y obtiene el saludo personalizado según la hora actual
         override fun doInBackground(vararg params: Void?): String {
-            //Obtener la hora actual
+            //Obtemos la hora actual
             val currentHour = Calendar.getInstance().get(Calendar.HOUR_OF_DAY)
             val greeting = when {
                 currentHour in 0..11 -> "Buenos días"
                 currentHour in 12..19 -> "Buenas tardes"
                 else -> "Buenas noches"
             }
+            //Retornamos el saludo personalizado según la hora y el nombre
             return if (userName.isNullOrBlank()) greeting else "$greeting, $userName"
         }
 
