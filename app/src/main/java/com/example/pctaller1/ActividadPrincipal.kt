@@ -34,9 +34,14 @@ class ActividadPrincipal : AppCompatActivity() {
         val rootView = findViewById<android.view.View>(R.id.rootView)
         rootView.setBackgroundColor(backgroundColor)
 
+        //Botón para guardar el nombre en SharedPreferences
         buttonSaveName.setOnClickListener {
             val name = editTextName.text.toString()
             textViewDisplayName.text = "Hola, $name"
+            //Guardamos el nombre en SharedPreferences
+            val editor = sharedPreferences.edit()
+            editor.putString("userName", name)
+            editor.apply()
         }
 
         buttonGoToSettings.setOnClickListener {

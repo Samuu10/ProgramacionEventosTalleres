@@ -15,7 +15,7 @@
 
     <Button
         android:id="@+id/buttonSaveName"
-        android:layout_width="wrap_content"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:text="Guardar Nombre"
         android:layout_below="@id/editTextName"
@@ -31,30 +31,55 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/buttonSaveName"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="35dp"
         android:textColor="@color/black"
         android:textSize="24sp" />
 
     <Button
         android:id="@+id/buttonGoToSettings"
-        android:layout_width="wrap_content"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:text="Ir a Configuración"
         android:layout_below="@id/textViewDisplayName"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="35dp"
         android:padding="16dp"
         android:background="@color/black"
         android:textColor="@color/white"/>
 
     <Button
-        android:id="@+id/buttonStartTask"
-        android:layout_width="wrap_content"
+        android:id="@+id/buttonSaveInfo"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
-        android:text="Iniciar Tarea"
+        android:text="Añadir Info"
         android:layout_below="@id/buttonGoToSettings"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
+        android:padding="16dp"
+        android:background="@color/black"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/buttonLoadInfo"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Cargar Info"
+        android:layout_below="@id/buttonSaveInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:padding="16dp"
+        android:background="@color/black"
+        android:textColor="@color/white"/>
+
+
+    <Button
+        android:id="@+id/buttonStartTask"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:text="Iniciar Tarea"
+        android:layout_below="@id/buttonLoadInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
         android:padding="16dp"
         android:background="@color/black"
         android:textColor="@color/white"/>
@@ -65,7 +90,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/buttonStartTask"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="190dp"
         android:max="100"
         android:visibility="gone" />
 
